@@ -1,0 +1,7 @@
+{
+  "private": true,
+  "scripts": {
+    "setup": "cd frontend && npm install",
+    "build": "cd frontend && npm run build"
+  }
+}
