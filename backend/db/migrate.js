@@ -10,10 +10,7 @@ async function migrate() {
     console.log('Migration complete: tables and indexes are ready.');
   } catch (err) {
     console.error('Migration failed:', err.message);
-    process.exitCode = 1;
-  } finally {
-    await pool.end();
   }
 }
 
-migrate();
+module.exports = migrate;
